@@ -31,7 +31,7 @@ CREATE TABLE `Bookings` (
   PRIMARY KEY (`B_nr`),
   KEY `fk_R_nr` (`R_nr`),
   CONSTRAINT `fk_R_nr` FOREIGN KEY (`R_nr`) REFERENCES `Rooms` (`R_nr`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -50,7 +50,7 @@ CREATE TABLE `CheckinCheckout` (
   KEY `fk_B_nr2` (`B_nr`),
   CONSTRAINT `fk_B_nr2` FOREIGN KEY (`B_nr`) REFERENCES `Bookings` (`B_nr`),
   CONSTRAINT `fk_C_ID` FOREIGN KEY (`C_ID`) REFERENCES `Customers` (`C_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -70,7 +70,7 @@ CREATE TABLE `Customers` (
   PRIMARY KEY (`C_ID`),
   KEY `fk_B_nr` (`B_nr`),
   CONSTRAINT `fk_B_nr` FOREIGN KEY (`B_nr`) REFERENCES `Bookings` (`B_nr`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -87,7 +87,7 @@ CREATE TABLE `Floors` (
   `F_Vacant` varchar(45) DEFAULT NULL,
   `F_Suites` int DEFAULT NULL,
   PRIMARY KEY (`Fl_nr`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -103,7 +103,7 @@ CREATE TABLE `ICE` (
   `C_ID` int DEFAULT NULL,
   KEY `fk_C_ID2` (`C_ID`),
   CONSTRAINT `fk_C_ID2` FOREIGN KEY (`C_ID`) REFERENCES `Customers` (`C_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -122,7 +122,7 @@ CREATE TABLE `Messages` (
   KEY `fk_S_ID` (`S_ID`),
   CONSTRAINT `fk_C_ID3` FOREIGN KEY (`C_ID`) REFERENCES `Customers` (`C_ID`),
   CONSTRAINT `fk_S_ID` FOREIGN KEY (`S_ID`) REFERENCES `Staff` (`S_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -139,7 +139,7 @@ CREATE TABLE `Payment` (
   `C_ID` int DEFAULT NULL,
   KEY `fk_C_ID4` (`C_ID`),
   CONSTRAINT `fk_C_ID4` FOREIGN KEY (`C_ID`) REFERENCES `Customers` (`C_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -156,7 +156,7 @@ CREATE TABLE `Reviews` (
   `C_ID` int DEFAULT NULL,
   KEY `fk_C_ID5` (`C_ID`),
   CONSTRAINT `fk_C_ID5` FOREIGN KEY (`C_ID`) REFERENCES `Customers` (`C_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -175,7 +175,7 @@ CREATE TABLE `Rooms` (
   `R_nrOfOccupants` int DEFAULT NULL,
   `R_price` int DEFAULT NULL,
   PRIMARY KEY (`R_nr`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -190,7 +190,7 @@ CREATE TABLE `Staff` (
   `S_name` varchar(45) DEFAULT NULL,
   `S_position` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`S_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -207,7 +207,7 @@ CREATE TABLE `Transactions` (
   `C_ID` int DEFAULT NULL,
   KEY `fk_C_ID6` (`C_ID`),
   CONSTRAINT `fk_C_ID6` FOREIGN KEY (`C_ID`) REFERENCES `Customers` (`C_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
