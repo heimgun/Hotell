@@ -1,0 +1,126 @@
+-- MySQL dump 10.13  Distrib 8.0.19, for macos10.15 (x86_64)
+--
+-- Host: localhost    Database: Hotell2
+-- ------------------------------------------------------
+-- Server version	8.0.19
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Dumping data for table `Bookings`
+--
+
+LOCK TABLES `Bookings` WRITE;
+/*!40000 ALTER TABLE `Bookings` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Bookings` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `CheckinCheckout`
+--
+
+LOCK TABLES `CheckinCheckout` WRITE;
+/*!40000 ALTER TABLE `CheckinCheckout` DISABLE KEYS */;
+/*!40000 ALTER TABLE `CheckinCheckout` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `Customers`
+--
+
+LOCK TABLES `Customers` WRITE;
+/*!40000 ALTER TABLE `Customers` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Customers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `Floors`
+--
+
+LOCK TABLES `Floors` WRITE;
+/*!40000 ALTER TABLE `Floors` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Floors` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `ICE`
+--
+
+LOCK TABLES `ICE` WRITE;
+/*!40000 ALTER TABLE `ICE` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ICE` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `Messages`
+--
+
+LOCK TABLES `Messages` WRITE;
+/*!40000 ALTER TABLE `Messages` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Messages` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `Payment`
+--
+
+LOCK TABLES `Payment` WRITE;
+/*!40000 ALTER TABLE `Payment` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Payment` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `Reviews`
+--
+
+LOCK TABLES `Reviews` WRITE;
+/*!40000 ALTER TABLE `Reviews` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Reviews` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `Rooms`
+--
+
+LOCK TABLES `Rooms` WRITE;
+/*!40000 ALTER TABLE `Rooms` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Rooms` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `Staff`
+--
+
+LOCK TABLES `Staff` WRITE;
+/*!40000 ALTER TABLE `Staff` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Staff` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `Transactions`
+--
+
+LOCK TABLES `Transactions` WRITE;
+/*!40000 ALTER TABLE `Transactions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Transactions` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2020-01-29 12:36:29
