@@ -5,6 +5,19 @@ ADD fl_nr INT,
 ADD CONSTRAINT fk_fl_nr
 FOREIGN KEY (fl_nr) REFERENCES `Hotell2.1`.Floors(fl_nr);
 
+ALTER TABLE `Hotell2.1`.Rooms
+DROP R_specNeeds;
+
+ALTER TABLE `Hotell2.1`.Rooms
+DROP R_xBeds;
+
+ALTER TABLE `Hotell2.1`.Rooms
+DROP R_nrDays;
+
+ALTER TABLE `Hotell2.1`.Rooms
+DROP R_nrOfOccupants;
+
+
 SELECT * FROM `Hotell2.1`.Rooms;
 
 INSERT INTO `Hotell2.1`.Rooms (R_nr, R_nrBeds, R_price, fl_nr)
