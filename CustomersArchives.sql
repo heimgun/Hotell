@@ -1,0 +1,1 @@
+SELECT * FROM `Hotell2.1`.CustomersArchives;

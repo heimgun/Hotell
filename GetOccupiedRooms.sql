@@ -8,5 +8,7 @@ BEGIN
   BD_nrOfNights
     FROM
         BookingDetails
-    ORDER BY R_Nr;    
+    ORDER BY 
+    R_Nr;    
+
 END

@@ -1,8 +1,12 @@
-CREATE DEFINER=`root`@`localhost` PROCEDURE `GetAvialableRooms`(date DATE)
+CREATE DEFINER=`root`@`localhost` PROCEDURE `GetAvialibleRooms`(date DATE)
 BEGIN
-    SELECT COUNT (R_nr - 100)
+
+    SELECT
+    50 -
+    (COUNT(R_nr))
     FROM
         BookingDetails 
-	WHERE BookingDetails.BD_CheckIn(date);
+	WHERE BookingDetails.BD_CheckIn = date;
 
-    END
+   
+END
